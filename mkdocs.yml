@@ -1,0 +1,15 @@
+site_name: usrbin.app Docs
+theme:
+  name: material
+  features:
+    - navigation.instant
+  icon:
+    repo: fontawesome/brands/github
+pages:
+  - index.md
+markdown_extensions:
+  - admonition
+extra_css:
+  - stylesheets/extra.css
+repo_url: https://github.com/usrbinapp/userbin-docs
+edit_uri: edit/main/docs
