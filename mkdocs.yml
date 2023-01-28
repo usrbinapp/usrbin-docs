@@ -1,4 +1,5 @@
 site_name: usrbin.app Docs
+site_url: https://usrbin.app/docs
 theme:
   name: material
   features:
