@@ -16,3 +16,6 @@ Somewhere, in your code:
 		usrbin.UsingGitHubUpdateChecker("github.com/<org>/<repo>"),
 	)
 ```
+
+
+If you have a GITHUB_TOKEN exported, it will use it.

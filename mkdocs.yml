@@ -8,6 +8,13 @@ theme:
     repo: fontawesome/brands/github
 pages:
   - index.md
+  - concepts.md
+  - benefits-of-updating.md
+  - roadmap.md
+  - security.md
+  - updaters.md
+  - install.md
+  - sdks/go.md
 markdown_extensions:
   - admonition
 extra_css:
