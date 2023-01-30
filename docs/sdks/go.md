@@ -1,5 +1,31 @@
 # Go SDK
 
+The usrbin Go SDK is designed to be integrated quickly into any single-binary CLI that's written in Go.
+
+## Prerequisites
+
+- The CLI must be written in Go
+- The CLI must be compiled into a single binary
+- The CLI releases must be published to a GitHub release page
+- The versions must be [semver](https://semver.org) compliant.
+
+## Preparing
+
+What do you need do before starting? You have to bring a plan -- where do you want it integrated? If you are stuck thinking, here's some inspiration:
+
+### `version` and `version upgrade`
+
+```
+% my-ctl version
+my-ctl version v1.0.1
+There's an update available. The latest version is v1.0.2.
+
+$ my-ctl version upgrade
+Downloading my-ctl v1.0.2.
+Performing in-place upgrade.
+Upgrade complete.
+```
+
 ## Installing
 
 ```
@@ -8,15 +34,14 @@ go get github.com/usrbinsdk/usrbin/go
 
 ## Initializing
 
-Somewhere, in your code:
+Somewhere, in your code (probably in the version CLI handler)
 
 ```
-	usrbinsdk, err := usrbin.New(
-		version,
-		usrbin.UsingGitHubUpdateChecker("github.com/<org>/<repo>"),
-	)
+usrbinsdk, err := usrbin.New(
+	version,
+	usrbin.UsingGitHubUpdateChecker("github.com/<org>/<repo>"),
+)
 ```
-
 
 ## Supported options
 
