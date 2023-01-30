@@ -9,12 +9,13 @@ theme:
 pages:
   - index.md
   - concepts.md
-  - benefits-of-updating.md
-  - roadmap.md
+  - why-update.md
   - security.md
   - updaters.md
+  - package-managers.md
   - install.md
   - sdks/go.md
+  - roadmap.md
 markdown_extensions:
   - admonition
 extra_css:
