@@ -1,5 +1,5 @@
 site_name: usrbin.app Docs
-site_url: https://www-usrbin-app.marccampbell.workers.dev/docs/
+site_url: https://usrbin.app
 theme:
   name: material
   features:
