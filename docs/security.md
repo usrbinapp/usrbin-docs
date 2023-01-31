@@ -2,7 +2,7 @@
 
 ## Privacy of information
 
-The usrbin SDK does not communicate back to any usrbin services. We don't receive or store any information from your CLI.
+When integrating the usrbin SDK, you control what (if any) data is transmitted out of your CLI. The usrbin SDK does not include any server or data collection elements. We don't collect or have the capabilities to store information from users of your CLI.
 
 ## Integrity of updates
 
