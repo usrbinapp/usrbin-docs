@@ -6,4 +6,6 @@ When integrating the usrbin SDK, you control what (if any) data is transmitted o
 
 ## Integrity of updates
 
-An important topic to discuss is how we verify the integrity of an update before installing it.
+An important topic to discuss is how we verify the integrity of an update before installing it. When there's a published checksum for the update, the SDK will verify the checksum of the downloaded file matches.
+
+For more information about checksum verification, see the [updaters](../updaters) page.
