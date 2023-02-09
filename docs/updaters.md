@@ -18,3 +18,20 @@ Your binary should be .tar.gz compressed or uncompressed. The usrbin SDK does no
 
 Your release should (highly recommended) contain one or more text files that have the published checksums of the binaries. The format of this filename is either `*checksums*.txt`, or `*.sha256`. The contents of the file should be `<checksum> <filename>`. There can be multiple checksum files in the release. In this case, the usrbin SDK will parse them all, looking for the checksum file contents that matches the asset name.
 
+## OCI
+
+Using OCI registries for delivery is a flexible way to add additional security and security-related features to your updates (when compared with downloading a binary over https). This is because of the expanding ecosystem to include tightly coupled signing, SBOM delivery, and more from OCI registries.
+
+If you are looking to get started with OCI registries for CLI distribution, consider using the [ORAS](https://github.com/oras-project/oras) CLI to push your release to a registry (GHCR, DockerHub, etc).
+
+Requirements:
+
+The release must be pushed to an OCI registry.
+
+The release must be a plain (uncompressed) binary in the OCI registry.
+
+The OCI tag must be semver compliant.
+
+The OCI image must be publicly available (no authentication).
+
+

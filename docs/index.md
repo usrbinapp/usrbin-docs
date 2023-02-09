@@ -4,9 +4,9 @@ Usrbin is an SDK that adds version checking and in-place upgrades to CLIs and ot
 
 ## Upgrade checks
 
-Most CLIs today have a `version` command (or a `--version` flag). This command will print the version, which is normally injected into the source code at build time in CI. It's great to show the user which version of the CLI they are running, but this is often needed to determine if there's an upgrade available. What if the `version` command also was able to tell the user that there's a new version available?
+Most CLIs today have a `version` command (or a `--version` flag). This command normally will print the version, which is often injected into the source code at build time in CI. It's great to have this common pattern to show the user which version of the CLI they are running. What if the `version` command also was able to tell the user that there's a new version available? Or even automatically apply the update?
 
-Usrbin uses [updaters](./updaters) to check the Releases in your public GitHub repo, and look for the latest release. If the [semver](https://semver.org) tag is greater than the version that the user is running, the usrbin SDK will return the latest version information to your CLI. You can display this, or do whatever you'd like with this information to help the user know that there's an upgrade available.
+Usrbin uses [updaters](./updaters) to look for new versions of your CLI from well-known and supported locations. If the [semver](https://semver.org) tag of the latest release is greater than the version that the user is running, the usrbin SDK will return the latest version information to your CLI. You can display this, or do whatever you'd like with this information to help the user know that there's an upgrade available.
 
 ## In place upgrade
 
